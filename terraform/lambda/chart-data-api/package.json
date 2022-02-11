@@ -1,0 +1,28 @@
+{
+  "name": "chart-data-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild chart-data-api.ts --bundle --platform=node --target=node12.1 --outfile=build/chart-data-api.js --minify",
+    "start": "ts-node chart-data-api.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.51",
+    "@types/express": "^4.17.13",
+    "@types/node": "^13.13.5",
+    "aws-sdk": "^2.655.0",
+    "esbuild": "^0.14.21",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@okta/jwt-verifier": "^2.3.0",
+    "@vendia/serverless-express": "^4.5.3",
+    "express": "^4.17.2",
+    "express-openid-connect": "^2.6.0",
+    "ts-node": "^10.5.0"
+  }
+}
